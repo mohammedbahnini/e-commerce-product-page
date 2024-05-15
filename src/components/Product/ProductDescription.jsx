@@ -31,7 +31,7 @@ function ProductDescription(props) {
         addItemToCart(count);
     }
     return (
-        <div className='px-6 pt-6'>
+        <div className='px-6 pt-6 lg:pl-[63px] '>
             <span className='text-dark-orange uppercase font-bold text-xs leading-none tracking-[1.85px] '>
                 {brand}
             </span>

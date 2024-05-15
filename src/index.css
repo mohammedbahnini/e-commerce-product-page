@@ -4,14 +4,17 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer base{
-    body{
+@layer base {
+    body {
         @apply font-kumbh-sans;
+    }
+
+
+}
+
+@layer components {
+    .container {
+        @apply px-6 mx-auto max-w-[1158px];
     }
 }
 
-@layer components{
-    .container{
-        @apply px-6 mx-auto max-w-[1158px] ;
-    }
-}
