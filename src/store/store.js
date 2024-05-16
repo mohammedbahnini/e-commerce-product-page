@@ -1,6 +1,6 @@
 import { create } from "zustand";
 import { devtools } from "zustand/middleware";
-import { ActionAddItemToCart } from "./actions";
+import { ActionAddItemToCart, ActionDeleteItemCart } from "./actions";
 
 export const Store = create(devtools(
     (set, get) => (
@@ -18,7 +18,8 @@ export const Store = create(devtools(
                 ]
                }
             ,
-            addItemToCart : (count) => ActionAddItemToCart(set , count)
+            addItemToCart : (count) => ActionAddItemToCart(set , count) , 
+            deleteItemCart : (id) => ActionDeleteItemCart(set , id),
         }  
     ) ,{
         name : "main-store"

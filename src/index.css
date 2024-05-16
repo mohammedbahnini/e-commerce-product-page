@@ -8,7 +8,10 @@
     body {
         @apply font-kumbh-sans;
     }
-
+    img{
+        @apply w-full ;
+    }
+    
 
 }
 
@@ -18,3 +21,10 @@
     }
 }
 
+.use-spring-carousel-thumbs-wrapper>:not(:last-of-type) {
+    margin-right: 32px;
+}
+
+
+.thumbnails .slick-list {margin: 0 -16px;}
+.thumbnails .slick-slide > div {padding: 0 16px;}

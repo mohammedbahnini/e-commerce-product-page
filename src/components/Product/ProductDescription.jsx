@@ -4,7 +4,6 @@ import { Store } from '../../store/store';
 function ProductDescription(props) {
 
     const { addItemToCart } = Store(store => store);
-    console.log(addItemToCart);
 
     const {
         brand,
@@ -31,25 +30,25 @@ function ProductDescription(props) {
         addItemToCart(count);
     }
     return (
-        <div className='px-6 pt-6 lg:pl-[63px] '>
-            <span className='text-dark-orange uppercase font-bold text-xs leading-none tracking-[1.85px] '>
+        <div className='pt-6 lg:pt-[62px]  '>
+            <span className='text-dark-orange uppercase font-bold text-xs leading-none tracking-[1.85px] lg:text-base lg:tracing-[2px] '>
                 {brand}
             </span>
-            <h1 className='capitalize font-bold text-[28px] leading-8 mt-4 text-very-dark-gray'>{name}</h1>
-            <p className='text-[15px] leading-6 text-slategray mt-4 '>{fullDescription}</p>
+            <h1 className='capitalize font-bold text-[28px] leading-8 mt-4 text-very-dark-gray lg:mt-6 lg:text-[44px] lg:leading-[48px] '>{name}</h1>
+            <p className='text-[15px] leading-6 text-slategray mt-4 lg:text-base lg:text-leading-[26px] '>{fullDescription}</p>
 
-            <div className='flex mt-6 items-center'>
-                <div className='flex items-center'>
-                    <h3 className='mr-4 text-very-dark-gray text-[28px] leading-normal font-bold  '>$ {price.toFixed(2)}</h3>
+            <div className='flex mt-6 items-center lg:mt-8 lg:block '>
+                <div className='flex items-center lg:mb-4'>
+                    <h3 className='mr-4 text-very-dark-gray text-[28px] leading-normal font-bold lg:text-[28px] lg:mr-6  '>${price.toFixed(2)}</h3>
                     <span className='inline-block bg-linen text-dark-orange rounded-[6px] py-1 px-[10px] font-bold ' >{promo}%</span>
                 </div>
                 <span className='inline-block ml-auto text-silver line-through font-bold'>${oldPrice.toFixed(2)}</span>
             </div>
 
 
-            <div className='flex flex-col gap-y-4'>
+            <div className='flex flex-col gap-y-4 mt-6 lg:mt-8 lg:flex-row lg:gap-x-4 '>
 
-                <div className='mt-6 flex justify-between items-center py-[22px] px-6 bg-ghost-white rounded-[10px] '>
+                <div className='flex justify-between items-center py-[22px] px-6 bg-ghost-white rounded-[10px]  lg:min-w-[157px] '>
                     <span className='cursor-pointer' onClick={handleDecrease}>
                         <img src="/public/icon-minus.svg" alt="" />
                     </span>
@@ -61,10 +60,10 @@ function ProductDescription(props) {
                 </div>
 
                 <button
-                    className='flex items-center justify-center bg-dark-orange text-white py-[18px] px-6 rounded-[10px] gap-x-4 shadow-[0_20px_50px_-20px] shadow-dark-orange '
+                    className='flex items-center justify-center bg-dark-orange text-white py-[18px] px-6 rounded-[10px] gap-x-4 shadow-[0_20px_50px_-20px] shadow-dark-orange lg:min-w-[272px]  '
                     onClick={handleAddItem}
                 >
-                    <img src="/public/icon-cart.svg" alt="" className='brightness-0 invert' /> <span className='font-bold'>Add to cart</span>
+                    <img src="/public/icon-cart.svg" alt="" className='brightness-0 invert w-[18px] ' /> <span className='font-bold'>Add to cart</span>
                 </button>
 
             </div>

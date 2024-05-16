@@ -7,17 +7,21 @@ function Header(props) {
 
     const { handleOpenMenu } = props;
 
-    const [ isCartOpen , setIsCartOpen] = useState(false);
+    const [isCartOpen, setIsCartOpen] = useState(false);
 
-    const handleOpenCart = ()=>{
-        setIsCartOpen( prev => !prev );
+    const handleOpenCart = () => {
+        setIsCartOpen(prev => !prev);
     }
 
     return (
         <>
-            <header className='relative'>
-               <HeaderContent  handleOpenMenu={handleOpenMenu} handleOpenCart={handleOpenCart} />
-               <Cart isCartOpen={isCartOpen} />
+            <header className=''>
+                <div className="container relative py-6 lg:pt-7 lg:pb-8 border-b-[1px] border-b-slategray/10 ">
+                    <HeaderContent handleOpenMenu={handleOpenMenu} handleOpenCart={handleOpenCart} />
+                    <Cart isCartOpen={isCartOpen} />
+                </div>
+
+
             </header>
         </>
     )

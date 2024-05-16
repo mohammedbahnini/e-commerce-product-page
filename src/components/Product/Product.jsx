@@ -1,7 +1,7 @@
 import React from 'react'
-import ProductImages from './ProductImages'
 import ProductDescription from './ProductDescription'
-import SwiperExample from './SwiperExample';
+import ProductCarousel from './ProductCarousel';
+import ProductModal from './Modal/ProductModal';
 
 
 function Product() {
@@ -10,13 +10,13 @@ function Product() {
             '/public/image-product-1.jpg',
             '/public/image-product-2.jpg',
             '/public/image-product-3.jpg',
-            '/public/image-product-4.jpg'
+            '/public/image-product-4.jpg' 
         ],
         thumbnails: [
             '/public/image-product-1-thumbnail.jpg',
             '/public/image-product-2-thumbnail.jpg',
             '/public/image-product-3-thumbnail.jpg',
-            '/public/image-product-4-thumbnail.jpg',
+            '/public/image-product-4-thumbnail.jpg'
 
         ],
         brand: 'sneaker company',
@@ -26,15 +26,16 @@ function Product() {
         promo: 50,
         oldPrice: 250.00
     };
+    
     return (
 
         <section>
 
             <div className="container ">
-                <div className='lg:pt-[90px] lg:flex  lg:*:w-1/2  lg:px-12  '>
-                    {/* <ProductImages images={product.images} thumbnails={product.thumbnails} />
-                    <ProductDescription product={product} /> */}
-                    <SwiperExample />
+                <div className='lg:pt-[90px] lg:flex lg:px-12 lg:*:flex-1 lg:gap-x-[125px]   '>
+                    <ProductCarousel images={product.images} thumbnails={product.thumbnails}  />
+                    <ProductDescription product={product} /> 
+               
                 </div>
             </div>
 
