@@ -16,7 +16,7 @@ function Header(props) {
     return (
         <>
             <header className=''>
-                <div className="container relative py-6 lg:pt-7 lg:pb-8 border-b-[1px] border-b-slategray/10 ">
+                <div className="container relative py-6 lg:pt-7 lg:pb-[34px] border-b-[1px] border-b-slategray/10 ">
                     <HeaderContent handleOpenMenu={handleOpenMenu} handleOpenCart={handleOpenCart} />
                     <Cart isCartOpen={isCartOpen} />
                 </div>

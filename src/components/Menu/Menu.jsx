@@ -36,7 +36,7 @@ function Menu(props) {
             <div className='w-[66.66666%] bg-white h-svh pl-6 pt-6'>
 
                 <button className='outline-none border-none' onClick={handleCloseMenu}>
-                    <img src="/public/icon-close.svg" alt="close" />
+                    <img src="/icon-close.svg" alt="close" />
                 </button>
 
                 <ul className='flex flex-col gap-y-5 mt-[54px] '>

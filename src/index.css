@@ -8,10 +8,20 @@
     body {
         @apply font-kumbh-sans;
     }
-    img{
-        @apply w-full ;
+
+    img {
+        @apply w-full;
     }
-    
+
+    .thumbnails .slick-list {
+        @apply my-0 -mx-[12px];
+    }
+
+    .thumbnails .slick-slide>div {
+        @apply py-0 px-4;
+    }
+
+
 
 }
 
@@ -25,6 +35,3 @@
     margin-right: 32px;
 }
 
-
-.thumbnails .slick-list {margin: 0 -16px;}
-.thumbnails .slick-slide > div {padding: 0 16px;}

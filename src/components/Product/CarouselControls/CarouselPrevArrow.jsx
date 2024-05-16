@@ -13,7 +13,7 @@ function CarouselPrevArrow(props) {
                 'left-4' : !isForModal
             })}
             onClick={props.onClick} >
-            <img src="/public/icon-previous.svg" alt="" className='w-[9px]' />
+            <img src="/icon-previous.svg" alt="" className='w-[9px]' />
         </div>
     )
 }

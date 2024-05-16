@@ -37,7 +37,7 @@ function Cart(props) {
                                         <p>${item.price.toFixed(2)} x {item.count} <span className='font-bold text-very-dark-gray'>${item.totalPrice.toFixed(2)}</span></p>
                                     </div>
                                     <span onClick={() => deleteItemCart(item.id)}>
-                                        <img src="/public/icon-delete.svg" alt="" className='w-[14px] ' />
+                                        <img src="/icon-delete.svg" alt="" className='w-[14px] ' />
                                     </span>
                                 </div>
                             ))

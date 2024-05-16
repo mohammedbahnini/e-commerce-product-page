@@ -14,7 +14,7 @@ function CarouselArrow(props) {
                     'left-4' : direction === 'prev' && !isForModal , 
                     'left-0 -translate-x-1/2' : direction === 'prev' && isForModal , 
                     'lg:hidden lg:invisible' : !showOnLarge,
-                    'hidden invisible' : !showOnLarge,
+                    'hidden invisible' : !showOnMobile,
 
                 })
             }

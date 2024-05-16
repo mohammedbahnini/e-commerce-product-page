@@ -9,7 +9,7 @@ export const Store = create(devtools(
                 items : [
                     {
                         id : 1,
-                        image: '/public/image-product-1-thumbnail.jpg',
+                        image: '/image-product-1-thumbnail.jpg',
                         name: 'Fall Limited Edition Sneakers',
                         count: 3,
                         price: 125,
