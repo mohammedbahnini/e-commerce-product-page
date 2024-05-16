@@ -13,8 +13,8 @@ function CarouselArrow(props) {
                     'right-0 translate-x-1/2' :direction === 'next' && isForModal ,
                     'left-4' : direction === 'prev' && !isForModal , 
                     'left-0 -translate-x-1/2' : direction === 'prev' && isForModal , 
-                    'lg:hidden lg:invisible' : !showOnLarge,
-                    'hidden invisible' : !showOnMobile,
+                    'lg:hidden lg:invisible' : showOnLarge === false ,
+                    'hidden invisible' : showOnMobile === false ,
 
                 })
             }

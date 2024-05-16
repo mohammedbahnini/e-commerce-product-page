@@ -1,9 +1,10 @@
 import React, { useEffect, useRef, useState } from 'react'
 import ModalSliderItem from './ModalSliderItem';
 import Slider from 'react-slick';
-import CarouselArrow from '../CarouselControls/CarouselArrow';
-import classNames from 'classnames';
+
+
 import ModalThumbnailItem from './ModalThumbnailItem';
+import CarouselArrow from '../CarouselControls/CarouselArrow';
 
 function ModalSlider(props) {
     const { images, thumbnails } = props;

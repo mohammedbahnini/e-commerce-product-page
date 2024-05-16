@@ -47,8 +47,8 @@ function ProductCarousel(props) {
 
                 <Slider
                     className=' relative'
-                    nextArrow={<CarouselArrow direction='next' showOnMobile />}
-                    prevArrow={<CarouselArrow direction='prev' showOnMobile />}
+                    nextArrow={<CarouselArrow direction='next' showOnMobile showOnLarge={false} />}
+                    prevArrow={<CarouselArrow direction='prev' showOnMobile showOnLarge={false} />}
                     ref={s => sliderRef = s}
                     focusOnSelect={true}
                     asNavFor={thumb}
