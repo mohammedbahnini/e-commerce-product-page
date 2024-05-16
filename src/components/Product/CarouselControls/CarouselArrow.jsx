@@ -19,8 +19,8 @@ function CarouselArrow(props) {
                 })
             }
             onClick={props.onClick} >
-            { direction === 'next' && <img src="/public/icon-next.svg" alt="" className='w-[9px]' />}
-            { direction === 'prev' && <img src="/public/icon-previous.svg" alt="" className='w-[9px]' />}
+            { direction === 'next' && <img src="/icon-next.svg" alt="" className='w-[9px]' />}
+            { direction === 'prev' && <img src="/icon-previous.svg" alt="" className='w-[9px]' />}
 
         </div>
     )
